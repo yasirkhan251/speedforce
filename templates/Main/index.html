@@ -13,6 +13,27 @@
 </head>
 <body class="bg-black text-white">
   <!-- Navbar -->
+   <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #mobile-menu {
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+    }
+    #mobile-menu.open {
+      max-height: 500px;
+      opacity: 1;
+    }
+    #menu-btn svg {
+      transition: transform 0.3s ease;
+    }
+    #menu-btn.open svg {
+      transform: rotate(90deg);
+    }
+  </style>
   <header class="bg-black shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-white tracking-wide">Maidly</h1>
@@ -176,10 +197,52 @@
       </div>
     </div>
   </section>
+   <section id="team" class="py-20 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Meet Our Team</h2>
+      <p class="text-gray-400 mb-10">Our dedicated professionals behind Maidly's mission to serve you better.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="bg-gray-900 p-4 rounded-lg shadow">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Founder" class="rounded-full w-24 h-24 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Ayesha Khan</h3>
+          <p class="text-blue-400 text-sm">Founder & CEO</p>
+        </div>
+        <div class="bg-gray-900 p-4 rounded-lg shadow">
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Ops" class="rounded-full w-24 h-24 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Ravi Patel</h3>
+          <p class="text-blue-400 text-sm">Operations Head</p>
+        </div>
+        <div class="bg-gray-900 p-4 rounded-lg shadow">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Support" class="rounded-full w-24 h-24 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Meena Das</h3>
+          <p class="text-blue-400 text-sm">Support Lead</p>
+        </div>
+        <div class="bg-gray-900 p-4 rounded-lg shadow">
+          <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Tech" class="rounded-full w-24 h-24 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Rahul Jain</h3>
+          <p class="text-blue-400 text-sm">CTO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="bg-black text-gray-500 py-6 text-center border-t border-gray-700">
     <p>&copy; 2025 Maidly. All rights reserved.</p>
   </footer>
+
+ <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        menuBtn.classList.toggle('open');
+      });
+    });
+  </script>
+
 </body>
 </html>
