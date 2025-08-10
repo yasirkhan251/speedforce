@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block title %}Services • Maidly{% endblock %}
+{% block content %}
+
+<div>
+  <!-- ================= HERO ================= -->
+  <section id="top" class="relative bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop');">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative max-w-7xl mx-auto px-4 pt-10 pb-16 md:py-20 min-h-[100svh] flex items-center">
+      <div>
+        <p class="text-blue-400 uppercase tracking-widest text-[10px] md:text-xs">Explore</p>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mt-2 leading-tight">Services for Every Home</h1>
+        <p class="text-gray-300 mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base">Choose from our curated categories—A, B, and C—to match your exact requirement. Transparent pricing, verified professionals, zero hassle.</p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#tabs" class="px-5 py-3 rounded bg-blue-600 hover:bg-blue-700">Browse Services</a>
+          <a href="#contact" class="px-5 py-3 rounded border border-gray-700 hover:border-blue-600">Get Help</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CATEGORY TABS ================= -->
+  <section id="tabs" class="border-b border-gray-800 sticky z-40 bg-black/80 backdrop-blur" style="top: calc(var(--navH));">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3 tabs-row">
+      <button data-tab="all" class="tab px-4 py-2 rounded border border-gray-700 hover:border-blue-600 text-sm">All</button>
+      <button data-tab="A" class="tab px-4 py-2 rounded border border-gray-700 hover:border-blue-600 text-sm">A</button>
+      <button data-tab="B" class="tab px-4 py-2 rounded border border-gray-700 hover:border-blue-600 text-sm">B</button>
+      <button data-tab="C" class="tab px-4 py-2 rounded border border-gray-700 hover:border-blue-600 text-sm">C</button>
+      <div class="ml-auto flex items-center gap-2">
+        <label for="sort" class="text-xs text-gray-400">Sort</label>
+        <select id="sort" class="bg-black border border-gray-700 rounded px-3 py-2 text-sm">
+          <option value="pop">Most Popular</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES GRID ================= -->
+  <main class="max-w-7xl mx-auto px-4 py-8 sm:py-10">
+    <div id="cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+      <!-- A -->
+      <article class="card bg-gray-900 rounded-xl border border-gray-800 p-5" data-category="A" data-price="299" data-pop="3">
+        <header class="flex items-center justify-between">
+          <h3 class="text-base sm:text-lg font-semibold">A1 • Kitchen Cleaning</h3>
+          <span class="text-[11px] text-gray-400">Category A</span>
+        </header>
+        <p class="text-gray-400 mt-2 text-sm">Deep degreasing, sink & tiles, appliance wipe.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-xl sm:text-2xl font-bold text-blue-400">₹299</span>
+          <button class="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-sm">Book Now</button>
+        </div>
+      </article>
+
+      <article class="card bg-gray-900 rounded-xl border border-gray-800 p-5" data-category="A" data-price="499" data-pop="5">
+        <header class="flex items-center justify-between">
+          <h3 class="text-base sm:text-lg font-semibold">A2 • Full Home Sweep & Mop</h3>
+          <span class="text-[11px] text-gray-400">Category A</span>
+        </header>
+        <p class="text-gray-400 mt-2 text-sm">Floors, corners, and dusting for 2BHK.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-xl sm:text-2xl font-bold text-blue-400">₹499</span>
+          <button class="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-sm">Book Now</button>
+        </div>
+      </article>
+
+      <!-- B -->
+      <article class="card bg-gray-900 rounded-xl border border-gray-800 p-5" data-category="B" data-price="699" data-pop="4">
+        <header class="flex items-center justify-between">
+          <h3 class="text-base sm:text-lg font-semibold">B1 • Daily Cooking Help</h3>
+          <span class="text-[11px] text-gray-400">Category B</span>
+        </header>
+        <p class="text-gray-400 mt-2 text-sm">Veg meals, roti/dal, kitchen tidy-up.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-xl sm:text-2xl font-bold text-blue-400">₹699</span>
+          <button class="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-sm">Book Now</button>
+        </div>
+      </article>
+
+      <article class="card bg-gray-900 rounded-xl border border-gray-800 p-5" data-category="B" data-price="999" data-pop="2">
+        <header class="flex items-center justify-between">
+          <h3 class="text-base sm:text-lg font-semibold">B2 • Meal Prep + Grocery Assist</h3>
+          <span class="text-[11px] text-gray-400">Category B</span>
+        </header>
+        <p class="text-gray-400 mt-2 text-sm">Chopping, marination, weekly menu support.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-xl sm:text-2xl font-bold text-blue-400">₹999</span>
+          <button class="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-sm">Book Now</button>
+        </div>
+      </article>
+
+      <!-- C -->
+      <article class="card bg-gray-900 rounded-xl border border-gray-800 p-5" data-category="C" data-price="1299" data-pop="1">
+        <header class="flex items-center justify-between">
+          <h3 class="text-base sm:text-lg font-semibold">C1 • Babysitting (4 hrs)</h3>
+          <span class="text-[11px] text-gray-400">Category C</span>
+        </header>
+        <p class="text-gray-400 mt-2 text-sm">Playtime, feeding, light housekeeping around child.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-xl sm:text-2xl font-bold text-blue-400">₹1299</span>
+          <button class="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-sm">Book Now</button>
+        </div>
+      </article>
+
+      <article class="card bg-gray-900 rounded-xl border border-gray-800 p-5" data-category="C" data-price="1699" data-pop="3">
+        <header class="flex items-center justify-between">
+          <h3 class="text-base sm:text-lg font-semibold">C2 • Elderly Care (4 hrs)</h3>
+          <span class="text-[11px] text-gray-400">Category C</span>
+        </header>
+        <p class="text-gray-400 mt-2 text-sm">Companionship, medication reminders, light chores.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-xl sm:text-2xl font-bold text-blue-400">₹1699</span>
+          <button class="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-sm">Book Now</button>
+        </div>
+      </article>
+    </div>
+
+    <!-- Pagination (static demo) -->
+    <div class="flex items-center justify-center gap-2 mt-8 sm:mt-10">
+      <button class="px-3 py-2 rounded border border-gray-700 hover:border-blue-600">Prev</button>
+      <button class="px-3 py-2 rounded border border-blue-600 bg-blue-600/10">1</button>
+      <button class="px-3 py-2 rounded border border-gray-700 hover:border-blue-600">2</button>
+      <button class="px-3 py-2 rounded border border-gray-700 hover:border-blue-600">3</button>
+      <button class="px-3 py-2 rounded border border-gray-700 hover:border-blue-600">Next</button>
+    </div>
+  </main>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section id="how" class="border-t border-gray-800 bg-gray-900/40">
+    <div class="max-w-7xl mx-auto px-4 py-12 sm:py-14 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-lg sm:text-xl font-semibold">1) Pick a category</h3>
+        <p class="text-gray-400 mt-2 text-sm sm:text-base">Choose A, B, or C based on the kind of help you need.</p>
+      </div>
+      <div>
+        <h3 class="text-lg sm:text-xl font-semibold">2) Select a service</h3>
+        <p class="text-gray-400 mt-2 text-sm sm:text-base">Review inclusions, timing, and pricing—no hidden fees.</p>
+      </div>
+      <div>
+        <h3 class="text-lg sm:text-xl font-semibold">3) Confirm & relax</h3>
+        <p class="text-gray-400 mt-2 text-sm sm:text-base">Pay securely and track your booking in your dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT CTA ================= -->
+  <section id="contact" class="bg-black">
+    <div class="max-w-7xl mx-auto px-4 py-14 sm:py-16 text-center">
+      <h3 class="text-2xl sm:text-3xl font-bold">Need a custom plan?</h3>
+      <p class="text-gray-400 mt-2 text-sm sm:text-base">Tell us your requirement—daily, weekly, or monthly—and we'll tailor it.</p>
+      <a href="mailto:support@maidly.in" class="inline-block mt-6 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded">Contact Support</a>
+    </div>
+  </section>
+  </div>
+  {% endblock %}

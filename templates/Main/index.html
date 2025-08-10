@@ -1,0 +1,277 @@
+
+  
+{% extends "base.html" %}
+{% block title %}Home • SpeedForce{% endblock %}
+{% block content %}
+  <div>
+  <!-- Hero Section -->
+<section id="hero" class="relative h-screen overflow-hidden">
+  <!-- Slides -->
+  <div class="absolute inset-0">
+    <!-- Slide 1 -->
+    <div data-hero-slide class="absolute inset-0 bg-cover bg-center transition-opacity duration-700 ease-out opacity-100"
+      style="background-image: url('https://videos.openai.com/vg-assets/assets%2Ftask_01k2am7jdeejpb3mygmk14tb1h%2F1754851039_img_1.webp?st=2025-08-10T17%3A26%3A17Z&se=2025-08-16T18%3A26%3A17Z&sks=b&skt=2025-08-10T17%3A26%3A17Z&ske=2025-08-16T18%3A26%3A17Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=9tWHWO2IfZatR08q9a3SLpdvKJxDTOl2i%2BoKFVsVcqo%3D&az=oaivgprodscus');">
+      <!-- Lighter on mobile, darker on larger screens -->
+      <div class="absolute inset-0 bg-black/40 md:bg-black/60 lg:bg-black/70 flex items-center">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <p class="text-blue-400 uppercase tracking-widest mb-2 text-xs md:text-sm">Reliable & Verified</p>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Professional Maid Services For Your Home</h1>
+          <p class="text-base md:text-lg text-gray-200 md:text-gray-300 mb-8">
+            Book trusted maids for cleaning, cooking, and more — all at your convenience.
+          </p>
+          <!-- Unique link for slide 1 -->
+          <a href="/services/cleaning"
+             class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-lg font-medium px-5 md:px-6 py-2.5 md:py-3 rounded transition">
+            Explore Cleaning
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div data-hero-slide class="absolute inset-0 bg-cover bg-center transition-opacity duration-700 ease-out opacity-0"
+      style="background-image: url('https://videos.openai.com/vg-assets/assets%2Ftask_01k2am88gre8g900zabk75j732%2F1754851060_img_0.webp?st=2025-08-10T17%3A24%3A53Z&se=2025-08-16T18%3A24%3A53Z&sks=b&skt=2025-08-10T17%3A24%3A53Z&ske=2025-08-16T18%3A24%3A53Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=hZyQ4bkHh1hatGA2%2BqY%2BP%2BfJ5Y9%2FGyLRKxRSZb0nTZ8%3D&az=oaivgprodscus');">
+      <div class="absolute inset-0 bg-black/40 md:bg-black/60 lg:bg-black/70 flex items-center">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <p class="text-blue-400 uppercase tracking-widest mb-2 text-xs md:text-sm">Reliable & Verified</p>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Expert Plumbers At Your Service</h1>
+          <p class="text-base md:text-lg text-gray-200 md:text-gray-300 mb-8">
+                 Quick fixes, leak repairs, and complete plumbing solutions — whenever you need them.
+          </p>
+          <!-- Unique link for slide 2 -->
+          <a href="/services/cooking"
+             class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-lg font-medium px-5 md:px-6 py-2.5 md:py-3 rounded transition">
+            Explore Plumber
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div data-hero-slide class="absolute inset-0 bg-cover bg-center transition-opacity duration-700 ease-out opacity-0"
+      style="background-image: url('https://videos.openai.com/vg-assets/assets%2Ftask_01k2amj3thejwbwdp83h7410m9%2F1754851388_img_0.webp?st=2025-08-10T17%3A24%3A47Z&se=2025-08-16T18%3A24%3A47Z&sks=b&skt=2025-08-10T17%3A24%3A47Z&ske=2025-08-16T18%3A24%3A47Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=aa5ddad1-c91a-4f0a-9aca-e20682cc8969&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=4LW%2FOYQfRA6fXqgYV3fIYGwEy8VXy93xhZJlDoJmDdU%3D&az=oaivgprodscus');">
+      <div class="absolute inset-0 bg-black/40 md:bg-black/60 lg:bg-black/70 flex items-center">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <p class="text-blue-400 uppercase tracking-widest mb-2 text-xs md:text-sm">Reliable & Verified</p>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Professional Electricians For Every Job</h1>
+          <p class="text-base md:text-lg text-gray-200 md:text-gray-300 mb-8">
+             From wiring to appliance installation — safe, fast, and affordable electrical services.
+          </p>
+          <!-- Unique link for slide 3 -->
+          <a href="/services/deep-cleaning"
+             class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-lg font-medium px-5 md:px-6 py-2.5 md:py-3 rounded transition">
+            Explore Electrician
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls (unchanged) -->
+  <button type="button" data-hero-prev aria-label="Previous"
+    class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur px-3 py-2 rounded-full">
+    &#8592;
+  </button>
+  <button type="button" data-hero-next aria-label="Next"
+    class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur px-3 py-2 rounded-full">
+    &#8594;
+  </button>
+
+  <!-- Dots (unchanged) -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+    <button data-hero-dot="0" class="h-2.5 w-2.5 rounded-full bg-white/60 ring-2 ring-white/80"></button>
+    <button data-hero-dot="1" class="h-2.5 w-2.5 rounded-full bg-white/30 hover:bg-white/60"></button>
+    <button data-hero-dot="2" class="h-2.5 w-2.5 rounded-full bg-white/30 hover:bg-white/60"></button>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const hero = document.getElementById('hero');
+    const slides = hero.querySelectorAll('[data-hero-slide]');
+    const prevBtn = hero.querySelector('[data-hero-prev]');
+    const nextBtn = hero.querySelector('[data-hero-next]');
+    const dots = hero.querySelectorAll('[data-hero-dot]');
+    let i = 0, timer;
+
+    function show(index) {
+      i = (index + slides.length) % slides.length;
+      slides.forEach((el, idx) => {
+        el.classList.toggle('opacity-100', idx === i);
+        el.classList.toggle('opacity-0', idx !== i);
+      });
+      dots.forEach((d, idx) => {
+        d.classList.toggle('bg-white/60', idx === i);
+        d.classList.toggle('ring-2', idx === i);
+        d.classList.toggle('ring-white/80', idx === i);
+        d.classList.toggle('bg-white/30', idx !== i);
+      });
+    }
+    const next = () => show(i + 1);
+    const prev = () => show(i - 1);
+    const start = () => { stop(); timer = setInterval(next, 5000); };
+    const stop  = () => { if (timer) clearInterval(timer); timer = null; };
+
+    nextBtn.addEventListener('click', () => { next(); start(); });
+    prevBtn.addEventListener('click', () => { prev(); start(); });
+    dots.forEach(dot => dot.addEventListener('click', () => {
+      show(parseInt(dot.getAttribute('data-hero-dot'), 10)); start();
+    }));
+
+    hero.addEventListener('mouseenter', stop);
+    hero.addEventListener('mouseleave', start);
+
+    show(0);
+    start();
+  })();
+</script>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-900">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">Why Choose SpeedForce?</h2>
+      <p class="text-lg text-gray-300 mb-4">SpeedForce offers affordable, verified, and trained domestic helpers for your everyday needs. With easy booking, transparent pricing, and customer support — our mission is to make your home sparkle without hassle.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
+        <div>
+          <h3 class="text-xl font-semibold text-blue-400 mb-2">Verified Professionals</h3>
+          <p class="text-gray-400">Background-checked and trained maids for your safety and convenience.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-400 mb-2">Flexible Plans</h3>
+          <p class="text-gray-400">Hourly, daily, weekly, and monthly options tailored to your needs.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-blue-400 mb-2">24/7 Support</h3>
+          <p class="text-gray-400">Get help anytime through chat, call, or WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-black">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">What Our Customers Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-gray-800 p-6 rounded shadow">
+          <p class="italic text-gray-300">“SpeedForce made my life so much easier. The maid was on time, polite, and did a fantastic job.”</p>
+          <p class="mt-4 font-semibold text-blue-400">– Priya Sharma</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow">
+          <p class="italic text-gray-300">“I booked for kitchen cleaning and the service was spotless. Highly recommend!”</p>
+          <p class="mt-4 font-semibold text-blue-400">– Ravi Menon</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow">
+          <p class="italic text-gray-300">“Super convenient and trustworthy. I now use SpeedForce every week!”</p>
+          <p class="mt-4 font-semibold text-blue-400">– Anjali Verma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="text-gray-400 mb-4">We’re here to help you 7 days a week. Drop us a message or call for assistance.</p>
+      <a href="mailto:support@SpeedForce.in" class="inline-block bg-blue-600 text-white px-6 py-3 rounded text-lg hover:bg-blue-700">Email Support</a>
+    </div>
+  </section>
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Simple Pricing for Every Home</h2>
+      <p class="text-gray-400 mb-10">No hidden fees. Transparent and affordable plans to match your needs.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-2">Basic</h3>
+          <p class="text-3xl font-bold text-blue-500 mb-4">₹299</p>
+          <p class="text-gray-300 mb-4">Per Visit</p>
+          <ul class="text-gray-400 text-sm space-y-2 mb-6">
+            <li>✔ Kitchen Cleaning</li>
+            <li>✔ Floor Mopping</li>
+            <li>✔ Bathroom Wipe</li>
+          </ul>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded">Choose Plan</button>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg border-2 border-blue-500">
+          <h3 class="text-xl font-bold mb-2">Standard</h3>
+          <p class="text-3xl font-bold text-blue-500 mb-4">₹699</p>
+          <p class="text-gray-300 mb-4">Weekly</p>
+          <ul class="text-gray-400 text-sm space-y-2 mb-6">
+            <li>✔ All Basic Features</li>
+            <li>✔ Laundry Help</li>
+            <li>✔ Window Cleaning</li>
+          </ul>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded">Choose Plan</button>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-2">Premium</h3>
+          <p class="text-3xl font-bold text-blue-500 mb-4">₹1999</p>
+          <p class="text-gray-300 mb-4">Monthly</p>
+          <ul class="text-gray-400 text-sm space-y-2 mb-6">
+            <li>✔ All Standard Features</li>
+            <li>✔ Deep Cleaning</li>
+            <li>✔ Dedicated Maid</li>
+          </ul>
+          <button class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded">Choose Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-lg font-semibold text-blue-400">How do I book a maid?</h3>
+          <p class="text-gray-300">Simply select a service, choose your preferred time slot, and confirm your booking online.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-blue-400">Are the maids background checked?</h3>
+          <p class="text-gray-300">Yes. All our maids go through ID verification and criminal background checks.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-blue-400">What if I'm not satisfied with the service?</h3>
+          <p class="text-gray-300">We offer a satisfaction guarantee. Contact support within 24 hours and we’ll make it right.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-blue-400">Do I need to provide cleaning materials?</h3>
+          <p class="text-gray-300">You can request the maid to bring materials for an extra fee or provide your own at home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section id="team" class="py-20 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Meet Our Team</h2>
+      <p class="text-gray-400 mb-10">Our dedicated professionals behind SpeedForce's mission to serve you better.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="bg-gray-900 p-4 rounded-lg shadow">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Founder" class="rounded-full w-24 h-24 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Ayesha Khan</h3>
+          <p class="text-blue-400 text-sm">Founder & CEO</p>
+        </div>
+        <div class="bg-gray-900 p-4 rounded-lg shadow">
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Ops" class="rounded-full w-24 h-24 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Ravi Patel</h3>
+          <p class="text-blue-400 text-sm">Operations Head</p>
+        </div>
+        <div class="bg-gray-900 p-4 rounded-lg shadow">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Support" class="rounded-full w-24 h-24 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Meena Das</h3>
+          <p class="text-blue-400 text-sm">Support Lead</p>
+        </div>
+        <div class="bg-gray-900 p-4 rounded-lg shadow">
+          <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Tech" class="rounded-full w-24 h-24 mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Rahul Jain</h3>
+          <p class="text-blue-400 text-sm">CTO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}
